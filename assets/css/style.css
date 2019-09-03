@@ -3,17 +3,31 @@ body {
 }
 h1 {
   text-align: center;
+color: white;
+font-family: 'Press Start 2P', cursive;
+
+}
+
+.border{
+  
   display: block;
-  padding: 1%;
+  /* padding: 2%; */
   margin: 0 auto;
-  width: 20%;
+  padding-bottom: 1%;
   border-style: solid;
   border-width: 29px 33px;
   -moz-border-image: url(../images/gem_frame1.png) 29 33 round;
   -webkit-border-image: url(../images/gem_frame1.png) 29 33 round;
   -o-border-image: url(../images/gem_frame1.png) 29 33 round;
   border-image: url(../images/gem_frame1.png) 29 33 fill round;
-color: white;
-font-family: 'Press Start 2P', cursive;
-
+}
+.main {
+  background-color: #2B271F;
+  color: whITE;
+  margin: 0 auto;
+  text-align: center;
+  width: 98%;
+  padding: 1%;
+  font-family: 'Press Start 2P', cursive;
+  
 }
