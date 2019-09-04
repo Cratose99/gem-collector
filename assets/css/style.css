@@ -1,3 +1,7 @@
+*{
+  font-family: 'Press Start 2P', cursive;
+  color: white;
+}
 body {
   background: url(../images/cave.png);
 }
@@ -5,6 +9,7 @@ h1 {
   text-align: center;
 color: white;
 font-family: 'Press Start 2P', cursive;
+
 
 }
 
@@ -20,6 +25,7 @@ font-family: 'Press Start 2P', cursive;
   -webkit-border-image: url(../images/gem_frame1.png) 29 33 round;
   -o-border-image: url(../images/gem_frame1.png) 29 33 round;
   border-image: url(../images/gem_frame1.png) 29 33 fill round;
+  background-color: #2B271F;
 }
 .main {
   background-color: #2B271F;
@@ -36,21 +42,22 @@ font-family: 'Press Start 2P', cursive;
   padding: 0;
   border: none;
   background: none;
+
 }
 #btn2 { 
-  background: transparent
+  background: transparent;
   padding: 0;
   border: none;
   background: none;
 }
 #btn3 { 
-  background: transparent
+  background: transparent;
   padding: 0;
   border: none;
   background: none;
 }
 #btn4 { 
-  background: transparent
+  background: transparent;
   padding: 0;
   border: none;
   background: none;
@@ -74,3 +81,25 @@ font-family: 'Press Start 2P', cursive;
   height: 130px;  
   width: 100px;
 }
+
+#gem1Value {
+/* background-color: #2B271F; */
+/* display:block; */
+/* width: 10%;
+text-align: center; */
+padding: 1%;
+display: flex;
+  justify-content: center;
+}
+/* .diamond{ 
+  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1%;
+} */
+.flex-container {
+  display: flex;
+  justify-content: center;
+  /* width: 100%; */
+}
+
