@@ -16,7 +16,6 @@ font-family: 'Press Start 2P', cursive;
 .border{
   
   display: block;
-  /* padding: 2%; */
   margin: 0 auto;
   padding-bottom: 1%;
   border-style: solid;
@@ -83,23 +82,39 @@ font-family: 'Press Start 2P', cursive;
 }
 
 #gem1Value {
-/* background-color: #2B271F; */
-/* display:block; */
-/* width: 10%;
-text-align: center; */
 padding: 1%;
 display: flex;
   justify-content: center;
+  
 }
-/* .diamond{ 
-  margin: 0 auto;
-  margin-left: auto;
-  margin-right: auto;
-  width: 1%;
-} */
+
 .flex-container {
   display: flex;
   justify-content: center;
-  /* width: 100%; */
+ 
+
+}
+
+#guessTo {
+  display: flex;
+  justify-content: center;
+  padding: 1%;
+  text-align: center;
+}
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 98%;
+    padding: 1%;
+    color: white;
+    text-align: center;
+ 
+}
+
+#counter1, #counter2 {
+  padding: 1%;
+  display: flex;
+    justify-content: center;
 }
 

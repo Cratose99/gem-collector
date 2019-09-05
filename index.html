@@ -6,54 +6,44 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Crystal Collector!</title>
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.js"
-      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-      crossorigin="anonymous"
-    ></script>
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script src="./assets/javascript/game.js"></script>
-    
   </head>
 
   <body id="header">
-        
     <div class="border">
       <h1>Gem Collector</h1>
 
       <div class="main">
-        <p>You will be given a random number at the start of the game.</p>
+        <p>	•You will be given a random number at the start of the game.</p>
         <br />
         <p>
-          There are four gems below. By clicking on a gem you will add a
-          specific amount of points to your total score.
+          	•There are four gems below. By clicking on a gem you will add a specific amount of points to your total score.
         </p>
         <br />
-        <P
-          >You will win the game by matching your total score to the random
-          number, you lose the game if your total score goes above the random
-          number.</P
-        >
+        <P>	•You will win the game by matching your total score to the random number, you lose the game if your total score goes above the random number.</P>
         <br />
         <p>
-          The value of each crystal is hidden from you until you click on it.
+          	•The value of each crystal is hidden from you until you click on it.
         </p>
         <br />
         <p>
-          Each time when the game starts, the game will change the values of
-          each crystal.
+          	•Each time when the game starts, the game will change the values of each crystal.
         </p>
       </div>
     </div>
+    <div id="guessTo">Add up to this number:<span id="targetNumber"></span></div>
     <div class="flex-container">
-    <button class="diamond" id="btn1" value=""><img src="./assets/images/gem_green.png"></button>
-    <button class="diamond" id="btn2"><img src="./assets/images/gem_orange.png"></button>
-    <button class="diamond" id="btn3"><img src="./assets/images/gem_blue.png"></button>
-    <button class="diamond" id="btn4"><img src="./assets/images/gem _red.png" ></button>
+      <button class="diamond" id="btn1"><img src="./assets/images/gem_green.png" /></button>
+      <button class="diamond" id="btn2"><img src="./assets/images/gem_orange.png" /></button>
+      <button class="diamond" id="btn3"><img src="./assets/images/gem_blue.png" /></button>
+      <button class="diamond" id="btn4"><img src="./assets/images/gem _red.png" /></button>
     </div>
-    <div id="gem1Value">Your total score is :<span id='valueCounter'></span></div>
+    <div id="gem1Value">Your total score is :<span id="valueCounter"></span></div>
+    <div id="counter1">Wins:<span id="wins"></span></div>
+    <div id="counter2">Loses:<span id="loses"></span></div>
   </body>
+
+  <footer>@Gabriel Eyer</footer>
 </html>

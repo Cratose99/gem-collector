@@ -1,57 +1,66 @@
-
-
-
-
 // GLOBAL VARIABLES
 var winsCounter = 0;
 var losesCounter = 0;
-var targetNum = 0; // number to guess TODO: create div to display value
-var valueCounter = 0; 
+var targetNum = tarNumber();
+var valueCounter = 0;
 
 // FUNCTIONS
 function getRandomNum() {
-  return Math.floor(Math.random() * 11)+1;
+  return Math.floor(Math.random() * 11) + 1;
 }
 
+function genRandomValues() {
+  for (let i = 1; i < 5; i++) {
+    let random1 = getRandomNum();
+    $(`#btn${i}`).attr("value", random1); // "```````" is template literals
+  }
+}
+function tarNumber() {
+  var min = 19;
+  var max = 120;
+  return Math.floor(Math.random() * (+max - +min)) + +min;
+}
+function winsLoses() {
+  if (valueCounter === targetNum) {
+    var winDiv = document.getElementById("wins");
+    winsCounter++;
+    winDiv.textContent = winsCounter;
+    tarNumber();
+  } else if (valueCounter > targetNum) {
+    var losesDiv = document.getElementById("wins");
+    losesCounter++;
+    losesDiv.textContent = losesCounter;
+    tarNumber();
+  }
+}
 
 // METHODS
 $(document).ready(function() {
-  $('#valueCounter').text(valueCounter)
+  $("#valueCounter").text(valueCounter);
+  $("#targetNumber").text(targetNum);
+  $("#wins").text(winsCounter);
+  $("#loses").text(losesCounter);
   // SET UP GAME
-  // 1. Generate a numberToGuess (targetNumber)
-  // 2. Initialize a starting valueCounter
-  // 3. Assign each crustal a random value between 1 - 12
-  
+  // 1. Generate a numberToGuess (targetNumber) coplete
+  // 2. Initialize a starting valueCounter complete
+  // 3. Assign each crustal a random value between 1 - 12 compelete
+
   //  PLAY GAME
   // 1. Player clicks crystal
   // 2. Grab value of crystal  (using jQuery)
-  // 3. Add value of crystal to valueCounter
+  // 3. Add value of crystal to valueCounter completed
   // 4. If  valueCounter = trgetNumber ---> wins++  **
   // else if valueCounter > targetNumber -->> losses++ **
-  
-  let random1 = getRandomNum()
- $("#btn1").attr('value', random1) 
 
- let random2 = getRandomNum()
- $("#btn2").attr('value', random2) 
+  genRandomValues();
+  // winsLoses()
 
- let random3 = getRandomNum()
- $("#btn3").attr('value', random3) 
- 
- let random4 = getRandomNum()
- $("#btn4").attr('value', random4) 
-
-  $(".diamond").on('click', function() { 
-    let value = parseInt($(this).attr('value'));
+  $(".diamond").on("click", function() {
+    let value = parseInt($(this).attr("value"));
     // console.log(value);
-   valueCounter += value  
+    valueCounter += value;
     // console.log('>>>>>>>>>>', valueCounter);
-    $('#valueCounter').text(valueCounter)
-    
+    $("#valueCounter").text(valueCounter);
   });
-  
-  
-
-
-})
-
+  // winsLoses()
+});
