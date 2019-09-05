@@ -12,9 +12,9 @@
   </head>
 
   <body id="header">
+      
     <div class="border">
       <h1>Gem Collector</h1>
-      <embed src="./assets/audio/Toby Fox - Megalovania.mp3" autostart="true" loop="true" hidden="true">  
       <div class="main">
         <p>	•You will be given a random number at the start of the game.</p>
         <br />
@@ -32,6 +32,7 @@
           	•Each time when the game starts, the game will change the values of each crystal.
         </p>
       </div>
+      
     </div>
     <div id="guessTo">Add up to this number:<span id="targetNumber"></span></div>
     <div class="flex-container">
@@ -43,7 +44,12 @@
     <div id="gem1Value">Your total score is :<span id="valueCounter"></span></div>
     <div id="counter1">Wins:<span id="wins"></span></div>
     <div id="counter2">Loses:<span id="loses"></span></div>
+    
   </body>
-
+  <!-- <audio autoplay="autoplay" controls="controls">
+      <source src="./assets/audio/Toby Fox - Megalovania.mp3" />     
+  </audio> -->
+  <input id="playAudio" type="button" value="PLAY COOL BEATS"  onclick="play()">
+<audio id="audio" src="./assets/audio/Toby Fox - Megalovania.mp3" ></audio>
   <footer>@Gabriel Eyer</footer>
 </html>

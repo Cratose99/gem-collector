@@ -8,7 +8,10 @@ var valueCounter = 0;
 function getRandomNum() {
   return Math.floor(Math.random() * 11) + 1;
 }
-
+function play(){
+  var audio = document.getElementById("audio");
+  audio.play();
+}
 function genRandomValues() {
   for (let i = 1; i < 5; i++) {
     let random1 = getRandomNum();
@@ -76,3 +79,4 @@ $(document).ready(function() {
   });
   // winsLoses()
 });
+

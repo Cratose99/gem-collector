@@ -102,9 +102,9 @@ display: flex;
   text-align: center;
 }
 footer {
-    position: fixed;
+    position: absolute;
     left: 0;
-    bottom: 0;
+    right: 0;
     width: 98%;
     padding: 1%;
     color: white;
@@ -114,8 +114,18 @@ footer {
 }
 
 #counter1, #counter2 {
-  padding: 1%;
+  padding: .5%;
   display: flex;
     justify-content: center;
 }
 
+@media only screen and (max-width: 600px){
+  
+
+}
+#playAudio{
+  padding: 1%;
+display: table;
+margin: 0 auto;
+background-color: #6E6E6E
+}
