@@ -25,12 +25,20 @@ function winsLoses() {
     var winDiv = document.getElementById("wins");
     winsCounter++;
     winDiv.textContent = winsCounter;
-    tarNumber();
+    valueCounter = 0;
+    $("#valueCounter").text(valueCounter);
+    targetNum = tarNumber();
+    $("#targetNumber").text(targetNum);
+    genRandomValues();
   } else if (valueCounter > targetNum) {
-    var losesDiv = document.getElementById("wins");
+    var losesDiv = document.getElementById("loses");
     losesCounter++;
     losesDiv.textContent = losesCounter;
-    tarNumber();
+    valueCounter = 0;
+    $("#valueCounter").text(valueCounter);
+    targetNum = tarNumber();
+    $("#targetNumber").text(targetNum);
+    genRandomValues()
   }
 }
 
@@ -61,6 +69,10 @@ $(document).ready(function() {
     valueCounter += value;
     // console.log('>>>>>>>>>>', valueCounter);
     $("#valueCounter").text(valueCounter);
+    winsLoses()
+    
+
+    
   });
   // winsLoses()
 });
